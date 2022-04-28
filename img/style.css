@@ -1,0 +1,129 @@
+:root {
+	--color1: #05b1b1;
+	--color2: #52339a;
+	--positionX: -20px;
+	--positionY: -10px;
+}
+
+body {
+	background: url(../img/bg.svg);
+}
+
+section {
+	padding: 100px 0;
+}
+
+.brand {
+	margin: 0px 10px;
+	filter: invert(100%);
+	width: 400px;
+}
+
+/*HAIRCUT*/
+
+.item {
+	height: 300px;
+	width: 300px;
+	background-image: url(../img/face.webp);
+	background-size: 300%;
+	border-radius: 25% 0 25% 0;
+	border: 1px solid;
+	margin: 40px auto;
+	box-shadow: 12px 12px 2px 1px rgba(171, 54, 3, .2);
+}
+.item:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 2px 1px rgba(171, 54, 3, .2);
+	transition: all .2s ease-in-out;
+  }
+
+
+.item::before {
+	content: '';
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	border-radius: 25% 0 25% 0;
+	background: rgba(30, 30, 30,0.8);
+	z-index: 2;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	color: whitesmoke;
+	font-family: Montserrat, sans-serif;
+	line-height: 150%;
+	font-size: 1.5em;
+	text-align: center;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding: 20px;
+	
+  }
+
+  .item:hover::before {
+	opacity: 100%;
+	
+	
+	
+  }
+  .item1:hover::before { 
+	content: 'Your face, jawline, forehead, and cheekbones are all more or less the same length. Meanwhile, your jawbone angles are sharp and not curved or round.';
+	line-height: 180%;
+	font-size: 1.25em;
+  }
+  .item2:hover::before { 
+	content: 'Your forehead is wider than your cheekbones and jawline, and your chin is pointy.';
+	line-height: 170%;
+	font-size: 1.5em;
+  }
+  .item3:hover::before { 
+	content: 'Your face is longer than the width of your cheekbones and your forehead measurement is greater than the jawline. Meanwhile, your jawline angles are round and not sharp.';
+	line-height: 175%;
+	font-size: 1.2em;
+  }
+  .item4:hover::before { 
+	content: 'Your jawline is wider than your cheekbones, which are wider than your forehead.';
+	line-height: 170%;
+	font-size: 1.5em;
+  }
+  .item5:hover::before { 
+	content: 'Your cheekbones and face measurements are similar and your forehead and jawline measurements are similar. Furthermore, those cheekbone and face measurements are greater than the jawline and forehead measurements. Meanwhile, the jawline sports soft, semi-round angles as opposed to sharp or clearly defined angles.';
+	line-height: 150%;
+	font-size: 1em;
+  }
+  .item6:hover::before { 
+	content: 'Your chin is pointy and your face is the longest measurement. Then the measurements go greatest to smallest in the following order: cheekbones, forehead, jawline.';
+	line-height: 175%;
+	font-size: 1.3em;
+  }
+
+
+.item1 {
+	background-position: -10px -10px;
+}
+.item2 {
+	background-position: -290px -10px;
+}
+.item3 {
+	background-position: -545px -10px;
+}
+.item4 {
+	background-position: -20px -360px;
+}
+.item5 {
+	background-position: -300px -360px;
+}
+.item6 {
+	background-position: -560px -360px;
+}
+/*ABOUT*/
+p {
+	font-size: 1.2em;
+}
+.foto {
+	background-size: cover;
+}
+/*FOOTER*/
+.right {
+	text-align: end;
+}
