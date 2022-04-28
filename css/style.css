@@ -24,7 +24,7 @@ section {
 .item {
 	height: 300px;
 	width: 300px;
-	background-image: url("https://manofmany.com/wp-content/uploads/2021/04/How-To-Choose-a-Hairstyle-for-Your-Face-Shape-Types-of-Mens-Face-Shapes.jpg");
+	background-image: url(../img/face.jpg");
 	background-size: 300%;
 	border-radius: 25% 0 25% 0;
 	border: 1px solid;
