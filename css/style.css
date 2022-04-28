@@ -24,7 +24,7 @@ section {
 .item {
 	height: 300px;
 	width: 300px;
-	background-image: url(../img/face.webp);
+	background: url(../img/face.webp);
 	background-size: 300%;
 	border-radius: 25% 0 25% 0;
 	border: 1px solid;
