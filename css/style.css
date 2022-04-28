@@ -14,7 +14,7 @@ section {
 }
 
 .brand {
-	margin: 0px 0;
+	margin: 0px 10px;
 	filter: invert(100%);
 	width: 400px;
 }
@@ -24,7 +24,7 @@ section {
 .item {
 	height: 300px;
 	width: 300px;
-	background-image: url(../img/face.webp");
+	background-image: url(../img/face.webp);
 	background-size: 300%;
 	border-radius: 25% 0 25% 0;
 	border: 1px solid;
