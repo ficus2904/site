@@ -1,0 +1,143 @@
+.cont {
+  background: black;
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: repeat(8, 1fr);
+  margin: 4% auto;
+  border: 2px solid black;
+  
+}
+.main {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+}
+.rightside {
+  width: auto;
+  height: auto;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+.score {
+  width: auto;
+  height: auto;
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+}
+.score-red {
+  display: flex;
+  place-items: center;
+  margin-left: 20%;
+}
+.score-green {
+  display: flex;
+  place-items: center;
+  margin-left: 20%;
+}
+.score-figure {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+}
+span {
+  margin-left: 10%;
+  font-size: 2vw;
+  font-family: 'open Sans';
+  font-weight: bolder;
+}
+
+
+
+/* LEFT SIDE */
+.rows {
+  background: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.square {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+/*
+.rows:nth-child(2n+1) .square:nth-child(2n+1) {
+  background: black;
+}
+.rows:nth-child(2n+2) .square:nth-child(2n+2) {
+  background: black;
+}
+/*
+.cont:before {
+  content:'ABCDEFGH';
+  position: absolute;
+  left: -10%;
+  top: 0%;
+  width: 50px;
+  height: 600px;
+  font-size: 3.75vw;
+  word-break: break-all;
+  color: black;
+  border: 1px solid black;
+  font-family: 'Roboto';
+}
+.cont:after {
+  content:'1 2 3 4 5 6 7 8';
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  width: 600px;
+  height: 50px;
+  font-size: 3vw;
+  word-spacing: .7em;
+  color: black;
+  border: 1px solid black;
+  font-family: 'Roboto';
+  text-align: center;
+}
+*/
+.figure {
+  width: 70%;
+  height: 70%;
+  
+  
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+button {
+  
+  width: 100%;
+  height: auto;
+  font-size: 2vw;
+  font-family: 'Roboto';
+}
+button:active {
+  background: red;
+}
+
+.black {
+  background: black;
+}
+
+.red {
+  background: radial-gradient(ellipse at center, rgba(145,4,0,1) 0%,rgba(229,7,0,1) 48%,rgba(137,11,0,1) 100%);
+}
+.green {
+ background: radial-gradient(ellipse at center, rgba(80,150,0,1) 0%,rgba(168,234,0,1) 48%,rgba(51,140,0,1) 100%);
+}
+
+.selected {
+  box-shadow: 1px 1px 17px 3px rgba(244,221,108,0.9);
+}
